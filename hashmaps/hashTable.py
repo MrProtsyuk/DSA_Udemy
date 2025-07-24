@@ -43,8 +43,18 @@ class HashTable:
         # If the key is not found
         return False
     
+    def keys(self):
+        keys_List = []
+        for bucket in self.table:
+            for pair in bucket:
+                keys_List.append(pair[0])
+        return keys_List
+    
     def __str__(self):
         return str(self.table)
     
 myHash = HashTable()
-print(myHash)
+myHash.put("name", "Alice")
+myHash.put("age", 30)
+myHash.put("city", "New York")
+print(myHash.keys())
