@@ -17,7 +17,6 @@ def fibonacci(num):
     else:
         return fibonacci(num - 1) + fibonacci(num - 2)
 
-
 def main():
     userNum = int(input("Enter a number: "))
     result = fibonacci(userNum)
