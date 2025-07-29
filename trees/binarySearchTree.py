@@ -39,6 +39,7 @@ class BinarySearchTree:
                     return self.__str__()
                 current = current.right
 
+    # Not fully working
     def lookup(self, data):
         if self.root == None:
             return print("Tree is empty")
